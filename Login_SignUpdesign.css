@@ -1,16 +1,14 @@
-head{
-    color: #CEE9FD;
-    background-color: #CEE9FD;
-}
-.Login{
-    border-color: lightcyan;
-
-}
-.SignIn{
-    border-color: lightcyan;
-
-
+.toggle-btn{
+    padding:10px 30px;
+    cursor: pointer;
+    background:transparent;
+    outline: none;
+    position: relative;
 }
 body{
     background-color: #CEE9FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
