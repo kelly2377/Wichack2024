@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #avatar-preview {
+            max-width: 300px;
+            max-height: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Avatar Generator</h1>
+
+    <form id="avatar-form">
+        <label for="avatar-type">Select Avatar Type:</label>
+        <select id="avatar-type" name="avatar-type">
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+        </select>
+
+        <br>
+
+        <label for="avatar-color">Select Avatar Color:</label>
+        <input type="color" id="avatar-color" name="avatar-color" value="#3498db">
+
+        <br>
+
+        <button type="button" onclick="generateAvatar()">Generate Avatar</button>
+    </form>
+
+    <div id="avatar-preview"></div>
+
+    <script>
+        function generateAvatar() {
+            const avatarType = document.getElementById('avatar-type').value;
+            const avatarColor = document.getElementById('avatar-color').value;
+            const avatarPreview = document.getElementById('avatar-preview');
+
+            // For demonstration purposes, just change the border-radius for circle/square effect
+            avatarPreview.style.borderRadius = (avatarType === 'circle') ? '50%' : '0';
+            avatarPreview.style.backgroundColor = avatarColor;
+        }
+    </script>
+</body>
+</html>
