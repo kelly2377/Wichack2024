@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar Generator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        #avatar-preview {
-            max-width: 300px;
-            max-height: 300px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pick an Avatar</title>
+  <style>
+    body {
+      background-color: #CEE9FD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .square {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #continueButton {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Avatar Generator</h1>
 
-    <form id="avatar-form">
-        <label for="avatar-type">Select Avatar Type:</label>
-        <select id="avatar-type" name="avatar-type">
-            <option value="circle">Circle</option>
-            <option value="square">Square</option>
-        </select>
+  <header>Pick an Avatar</header>
 
-        <br>
+  <div class="container">
+    <div class="square">
+      <img src="assets/avatar1.png" alt="Image 1">
+    </div>
+    <div class="square">
+      <img src="assets/avatar2.png" alt="Image 2">
+    </div>
+    <div class="square">
+      <img src="assets/avatar3.png" alt="Image 3">
+    </div>
+    <div class="square">
+      <img src="assets/avatar4.png" alt="Image 4">
+    </div>
+  </div>
 
-        <label for="avatar-color">Select Avatar Color:</label>
-        <input type="color" id="avatar-color" name="avatar-color" value="#3498db">
+  <div style="height: 20px;"></div> <!-- Space between images and button -->
 
-        <br>
+  <button id="continueButton" onclick="redirectToMap()">Continue</button>
 
-        <button type="button" onclick="generateAvatar()">Generate Avatar</button>
-    </form>
+  <script>
+    function redirectToMap() {
+      window.location.href = "map.html";
+    }
+  </script>
 
-    <div id="avatar-preview"></div>
-
-    <script>
-        function generateAvatar() {
-            const avatarType = document.getElementById('avatar-type').value;
-            const avatarColor = document.getElementById('avatar-color').value;
-            const avatarPreview = document.getElementById('avatar-preview');
-
-            // For demonstration purposes, just change the border-radius for circle/square effect
-            avatarPreview.style.borderRadius = (avatarType === 'circle') ? '50%' : '0';
-            avatarPreview.style.backgroundColor = avatarColor;
-        }
-    </script>
 </body>
+
 </html>
