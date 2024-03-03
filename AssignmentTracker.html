@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment Tracker</title>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            /* Sky Blue background color */
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-      
-          h1 {
-            color: #4682b4;
-            /* Steel Blue text color */
-          }
-      
-          table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-          }
-      
-          th,
-          td {
-            border: 1px solid #87ceeb;
-            /* Sky Blue border color */
-            padding: 10px;
-            text-align: left;
-          }
-      
-          th {
-            background-color: #87ceeb;
-            /* Sky Blue header background color */
-            color: #fff;
-            /* White text color */
-          }
-      
-          tr:nth-child(even) {
-            background-color: #f0f8ff;
-            /* Sky Blue alternating row background color */
-          }
-        </style>
-      </head>
-      
-      <body>
-      
-        <h1>Assignment Tracker</h1>
-      
-        <table>
-          <thead>
-            <tr>
-              <th>Assignment</th>
-              <th>Due Date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Assignment 1</td>
-              <td>March 10, 2024</td>
-              <td>In Progress</td>
-            </tr>
-            <tr>
-              <td>Assignment 2</td>
-              <td>March 15, 2024</td>
-              <td>Not Started</td>
-            </tr>
-            <!-- Add more rows as needed -->
-          </tbody>
-        </table>
-      </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      /* Sky Blue background color */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #4682b4;
+      /* Steel Blue text color */
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #87ceeb;
+      /* Sky Blue border color */
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #87ceeb;
+      /* Sky Blue header background color */
+      color: #fff;
+      /* White text color */
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f8ff;
+      /* Sky Blue alternating row background color */
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #3498db; /* Dark pink background */
+        border-radius: 10px; /* Rounded edges */
+        margin: 10px 0;
+    }
+
+    nav a {
+        color: #ecf0f1; /* Light pink text */
+        text-decoration: none;
+        padding: 14px 20px;
+        display: inline-block;
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    nav a:hover {
+        background-color: #2980b9; /* Darker pink on hover */
+    }
+  </style>
+  <h1>Assignment Tracker</h1>
+</head>
+
+<body>
+
+  
+
+  <table>
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Due Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Assignment 1</td>
+        <td>March 10, 2024</td>
+        <td>In Progress</td>
+      </tr>
+      <tr>
+        <td>Assignment 2</td>
+        <td>March 15, 2024</td>
+        <td>Not Started</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+  <nav>
+      <a href="Calander.html">Calender</a>
+      <a href="Journal.html">Journal</a>
+      <a href="AssignmentTracker.html">Tracker</a>
+      <a href="Connect.html">Connect</a>
+  </nav>
+</body>
+
 </html>

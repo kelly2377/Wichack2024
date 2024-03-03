@@ -38,12 +38,31 @@
             border-radius: 5px;
             cursor: pointer;
         }
+      nav {
+          display: flex;
+          justify-content: center;
+          background-color: #3498db; /* Dark pink background */
+          border-radius: 10px; /* Rounded edges */
+          margin: 10px 0;
+      }
+
+      nav a {
+          color: #ecf0f1; /* Light pink text */
+          text-decoration: none;
+          padding: 14px 20px;
+          display: inline-block;
+          transition: background-color 0.3s ease; /* Smooth transition */
+      }
+
+      nav a:hover {
+          background-color: #2980b9; /* Darker pink on hover */
+      }
     </style>
 </head>
 <body>
 
     <div id="journal">
-        <h1>CJournal</h1>
+        <h1>Journal</h1>
 
         <textarea id="entry" placeholder="Write your journal entry here..."></textarea><br>
 
@@ -78,4 +97,11 @@
     </script>
 
 </body>
+  <nav>
+      <a href="Calander.html">Calender</a>
+      <a href="Journal.html">Journal</a>
+      <a href="AssignmentTracker.html">Tracker</a>
+      <a href="Connect.html">Connect</a>
+  </nav>
 </html>
+
