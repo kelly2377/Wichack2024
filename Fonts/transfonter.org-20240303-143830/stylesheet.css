@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Silkscreen Expanded';
+    src: url('Silkscreen-Expanded.eot');
+    src: url('Silkscreen-Expanded.eot?#iefix') format('embedded-opentype'),
+        url('Silkscreen-Expanded.woff2') format('woff2'),
+        url('Silkscreen-Expanded.woff') format('woff'),
+        url('Silkscreen-Expanded.ttf') format('truetype'),
+        url('Silkscreen-Expanded.svg#Silkscreen-Expanded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

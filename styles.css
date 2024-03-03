@@ -1,10 +1,17 @@
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Silkscreen-Expanded';
+  src: url('Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.eot');
+  src:url(Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.eot#iefix) format('embedded-opentype'),
+  url('Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.woff2') format('woff2'),
+  url(Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.woff) format('woff'),
+  url(Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.ttf) format(truetype),
+  url(Fonts/transfonter.org-20240303-143830/Silkscreen-Expanded.svg#svgFontName) format('svg');
+
   margin: 0;
   padding: 0;
-  background-color: #8cb9db;
+  background-color: #CEE9FD;
 }
 
 
