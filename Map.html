@@ -19,35 +19,16 @@
       margin: 20px 0;
     }
 
-    /* .level-button {
-      padding: 10px 20px;
-      font-size: 16px;
-      font-family: 'Press Start 2P', cursive;
-      margin: 5px;
-      cursor: pointer;
-    } */
-
-    .moved-button {
-      padding: 10px 20px;
-      font-size: 16px;
-      font-family: 'Press Start 2P', cursive;
-      margin: 5px;
-      cursor: pointer;
+    #movingImage {
       position: relative;
-      left: 10px;
-      top: -60px;
-      right: 10px;
+      left: 0;
+      top: 0;
     }
-    .moved-button1 {
-      padding: 10px 20px;
-      font-size: 16px;
-      font-family: 'Press Start 2P', cursive;
-      margin: 5px;
-      cursor: pointer;
+
+    #movingImage1 {
       position: relative;
-      left: 10px;
-      top: -200px;
-      right: 10px;
+      left: 0;
+      top: 0;
     }
   </style>
 </head>
@@ -56,22 +37,52 @@
   <h1>Map</h1>
 
   <!-- Map Image -->
-  <img id="map" src="assets/avatar4.png" alt="Map Image">
+  <img src="assets/avatar4.png" alt="Map Image" id="map">
 
   <!-- Level Buttons -->
   <!-- <button class="moved-button">Click me</button> -->
-  <button   class="moved-button" onclick="changeLevel(1)">Level 1</button>
-  <button class="moved-button1" onclick="changeLevel(2)">Level 2</button>
-  <button class="moved-button" onclick="changeLevel(3)">Level 3</button>
-  <button class="moved-button1" onclick="changeLevel(4)">Level 4</button>
+  <a href="LevelOne.html">
+    <img id="movingImage" src="Untitled_Project-removebg-preview.png" Button Alt Text" width="100" height="100">
+  </a>
+  <a href="#">
+    <img src="Untitled_Project__1_-removebg-preview.png" Button Alt Text" width="100" height="100">
+  </a>
+  <a href="#">
+    <img id="movingImage1" src="Untitled_Project__2_-removebg-preview.png" Button Alt Text" width="100" height="100">
+  </a>
 
-  <script>
-    function changeLevel(level) {
-      // Add logic here to change the map based on the selected level
-      console.log('Switching to Level ' + level);
-      // You can update the source of the map or perform other actions as needed
-    }
-  </script>
+  <a href="#">
+    <img src="Untitled_Project__3_-removebg-preview.png" Button Alt Text" width="100" height="100">
+  </a>
+
+  <a href="#">
+    <img src="41844718-removebg-preview.png" Button Alt Text width="300" height="300">
+
+
+    <script>
+      function changeLevel(level) {
+
+        // Add logic here to change the map based on the selected level
+        console.log('Switching to Level ' + level);
+        // You can update the source of the map or perform other actions as needed
+      }
+    </script>
+
+    <script>
+
+      var image = document.getElementById('movingImage');
+      var image2 = document.getElementById('movingImage1');
+      var image3 = document.getElementById('movingImage2');
+
+
+      image.style.left = '10px'; // Move 50 pixels to the right
+      image.style.top = '-60px';
+      image2.style.left = '10px';
+      image2.style.top = '-60px';
+      image3.style.left = '10px';
+      image3.style.top = '-10px';
+
+    </script>
 </body>
 
 </html>
