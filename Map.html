@@ -30,6 +30,25 @@
       left: 0;
       top: 0;
     }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #3498db; /* Dark pink background */
+        border-radius: 10px; /* Rounded edges */
+        margin: 10px 0;
+    }
+
+    nav a {
+        color: #ecf0f1; /* Light pink text */
+        text-decoration: none;
+        padding: 14px 20px;
+        display: inline-block;
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    nav a:hover {
+        background-color: #2980b9; /* Darker pink on hover */
+    }
   </style>
 </head>
 
@@ -83,6 +102,13 @@
       image3.style.top = '-10px';
 
     </script>
+
+    <nav>
+        <a href="Calander.html">Calender</a>
+        <a href="Journal.html">Journal</a>
+        <a href="#">Tracker</a>
+        <a href="#">Connect</a>
+    </nav>
 </body>
 
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <style>
+        body {
+            background-color: #87CEEB; /* Sky Blue */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #journal {
+            background-color: #FFFFFF; /* White */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #entry {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #4682B4; /* Steel Blue */
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #submit {
+            background-color: #4682B4; /* Steel Blue */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="journal">
+        <h1>CJournal</h1>
+
+        <textarea id="entry" placeholder="Write your journal entry here..."></textarea><br>
+
+        <button id="submit" onclick="addEntry()">Add Entry</button>
+
+        <div id="entries">
+            <!-- Entries will be displayed here -->
+        </div>
+
+        <button id="weekly" onclick="showWeekly()">Show Weekly Entries</button>
+    </div>
+
+    <script>
+        function addEntry() {
+            const entryText = document.getElementById('entry').value;
+            const entriesDiv = document.getElementById('entries');
+
+            if (entryText.trim() !== '') {
+                const entryDiv = document.createElement('div');
+                entryDiv.innerHTML = `<p>${entryText}</p>`;
+                entriesDiv.appendChild(entryDiv);
+
+                // Clear the input field
+                document.getElementById('entry').value = '';
+            }
+        }
+
+        function showWeekly() {
+            alert('Displaying weekly entries!');
+            // You can add functionality to display weekly entries here
+        }
+    </script>
+
+</body>
+</html>
