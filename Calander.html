@@ -37,6 +37,22 @@
       justify-content: center;
       height: 100vh;
     }
+    .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
     .calendar {
       background-color: #fff;
@@ -70,12 +86,12 @@
       padding: 10px;
     }
   </style>
-  <title>Cute Sky-Blue Calendar</title>
+  <title>Calendar</title>
 </head>
 
 <body>
   <div class="calendar">
-    <div class="calendar-header">March 2024</div>
+    <div class="calendar-header"><i class="arrow left"></i>March 2024<i class="arrow right"></i></div>
     <div class="calendar-days">
       <div class="day">Sun</div>
       <div class="day">Mon</div>
