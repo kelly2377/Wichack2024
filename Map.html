@@ -35,11 +35,14 @@
         margin-top: 20px;
     }
     nav {
-        display: flex;
-        justify-content: center;
-        background-color: #3498db; /* Dark pink background */
-        border-radius: 10px; /* Rounded edges */
-        margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      background-color: #3498db;
+      border-radius: 10px;
+      margin: 10px 0;
+      position: fixed; /* Fix the position */
+      bottom: 0; /* Position at the bottom */
+      width: 100%;
     }
 
     nav a {
@@ -53,6 +56,7 @@
     nav a:hover {
         background-color: #2980b9; /* Darker pink on hover */
     }
+  
   </style>
 </head>
 
@@ -102,8 +106,7 @@
       image.style.top = '-60px';
       image2.style.left = '10px';
       image2.style.top = '-60px';
-      image3.style.left = '10px';
-      image3.style.top = '-10px';
+     
 
     </script>
   
@@ -113,7 +116,8 @@
         <a href="Journal.html">Journal</a>
         <a href="AssignmentTracker.html">Tracker</a>
         <a href="Connect.html">Connect</a>
-    </nav>
+    </nav> 
 </body>
+
 
 </html>
