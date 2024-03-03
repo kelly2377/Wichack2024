@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pick an Avatar</title>
+  <h1>Pick an Avatar</h1>
   <style>
     body {
-      background-color: #CEE9FD;
+      
+      font-family: 'Press Start 2P', cursive;
+      background-color: #4695D0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -15,7 +18,9 @@
       height: 100vh;
       margin: 0;
     }
-
+    h1{
+      color: #fff;
+    }
     header {
       font-size: 24px;
       margin-bottom: 20px;
@@ -39,22 +44,40 @@
       object-fit: cover;
     }
 
-    #continueButton {
-      margin-top: 20px;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+    
+      #continueButton {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: darkblue;
+        /* Pink */
+        color: #fff;
+        border: 2px solid #4695D0;
+        /* Deep Pink */
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+
+    #continueButton:hover {
+        background-color: lightblue;
+        /* Deep Pink */
+        color: #fff;
+      }
   </style>
 </head>
 
 <body>
 
-  <header>Pick an Avatar</header>
+  
 
   <div class="container">
     <div class="square">
-      <img src="assets/avatar1.png" alt="Image 1">
+      <img src="assets/avatar5.png" alt="Image 1">
     </div>
     <div class="square">
       <img src="assets/avatar2.png" alt="Image 2">
@@ -73,7 +96,7 @@
 
   <script>
     function redirectToMap() {
-      window.location.href = "map.html";
+      window.location.href = "Map.html";
     }
   </script>
 
