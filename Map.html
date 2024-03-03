@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map with Level Buttons</title>
+  <style>
+    body {
+      background-color: #CEE9FD;
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    #map {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    /* .level-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Press Start 2P', cursive;
+      margin: 5px;
+      cursor: pointer;
+    } */
+
+    .moved-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Press Start 2P', cursive;
+      margin: 5px;
+      cursor: pointer;
+      position: relative;
+      left: 10px;
+      top: -250px;
+      right: 10px;
+    }
+    .moved-button1 {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Press Start 2P', cursive;
+      margin: 5px;
+      cursor: pointer;
+      position: relative;
+      left: 10px;
+      top: -50px;
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Map</h1>
+
+  <!-- Map Image -->
+  <img id="map" src="assets/avatar4.png" alt="Map Image">
+
+  <!-- Level Buttons -->
+  <!-- <button class="moved-button">Click me</button> -->
+  <button   class="moved-button" onclick="changeLevel(1)">Level 1</button>
+  <button class="moved-button1" onclick="changeLevel(2)">Level 2</button>
+  <button class="moved-button" onclick="changeLevel(3)">Level 3</button>
+  <button class="moved-button" onclick="changeLevel(4)">Level 4</button>
+
+  <script>
+    function changeLevel(level) {
+      // Add logic here to change the map based on the selected level
+      console.log('Switching to Level ' + level);
+      // You can update the source of the map or perform other actions as needed
+    }
+  </script>
+</body>
+
+</html>
